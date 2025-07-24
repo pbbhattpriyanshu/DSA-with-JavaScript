@@ -1,3 +1,6 @@
+//LOGIC - LOOPS
+
+
 //factorial
 // let num = 6; //720
 // let fact = 1;

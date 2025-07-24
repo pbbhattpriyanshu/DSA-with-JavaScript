@@ -1,3 +1,5 @@
+//PATTERN QUESTION
+
 for(let i=1; i<=5; i++) {
 
     for(let j=i; j<=4; j++){

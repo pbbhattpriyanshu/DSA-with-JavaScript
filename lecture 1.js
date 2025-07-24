@@ -1,3 +1,4 @@
+//BASICS
 // 1. let vs var
 
 // by the help of var we can use the variable before initialize. but in let case we can't
