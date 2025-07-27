@@ -148,3 +148,22 @@
 // }
 // console.log(arr);
 
+//Move all Zeroes to front of Array
+// let arr = [1,3,0,1,0,2,0,5]
+// console.log(arr.length);
+
+// let j = arr.length-1
+// for (let i = arr.length-1; i >= 0; i--) {
+//     if (arr[i] !== 0) {
+//         arr[j] = arr[i]
+//         j--
+//     }
+// }
+
+// for (let i = j; i >= 0; i--) {
+//     arr[i] = 0;
+// }
+
+// console.log(arr);
+// console.log(arr.length);
+
