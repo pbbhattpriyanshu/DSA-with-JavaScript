@@ -17,7 +17,6 @@
 
 // arr[9] = 121  //6,7,8, -> undefined
 
-
 // for(let i=0; i<arr.length; i++) {  // <(=) --> undefined
 //     console.log(`${i}th index : ${arr[i]}`);
 // }
@@ -27,7 +26,7 @@
 // for(let i=0; i<arr.length; i++) {
 //     arr[i] = Number(prompt("Enter a value"));
 //     sum = sum + arr[i]
-// } 
+// }
 
 // console.log(arr);
 // console.log("sum = ", sum);
@@ -43,7 +42,6 @@
 // }
 
 // console.log(Max);
-
 
 // 2 Max Element
 // let arr = [154,7,83,65,71,91,25, 154]
@@ -120,14 +118,12 @@
 //     return i + 1; // total number of unique elements
 // };
 
-
 // let nums = [1, 1, 2];
 // let k = removeDuplicate(nums);
 
 // console.log("k =", k);                      // Output: 2
 // console.log("Modified array:", nums);      // Output: [1, 2, ...]
 // console.log("Unique values:", nums.slice(0, k)); // Output: [1, 2]
-
 
 //Move zeros
 // let arr = [0,1,0,3,12]
@@ -168,3 +164,41 @@
 // console.log(arr.length);
 
 //Left Rotate Array by One Place
+// function rotateLeft(arr, rotation) {
+//   rotation = rotation % arr.length; // optional, handles large values
+
+//   for (let j = 1; j <= rotation; j++) {
+//     let copy = arr[0];
+//     for (let i = 0; i < arr.length - 1; i++) {
+//       arr[i] = arr[i + 1];
+//     }                         
+//     arr[arr.length - 1] = copy;
+//   }
+
+//   console.log(arr);
+// }
+
+// let arr = ["Abhi", "Bula", "Chamka", "Dora", "Egle", "Fana"];
+// let rotation = 1;
+
+// rotateLeft(arr, rotation);
+
+//Right Rotate Array by One Place
+function rotateRight(arr, rotation) {
+  rotation = rotation % arr.length; // optional, handles large values
+
+  for (let j = 1; j <= rotation; j++) {
+    let copy =  arr[arr.length - 1];
+    for (let i = arr.length-1; i > 0 ; i--) {
+      arr[i] = arr[i-1];
+    }                         
+     arr[0] = copy;
+  }
+
+  console.log(arr);
+}
+
+let arr = ["Abhi", "Bula", "Chamka", "Dora", "Egle", "Fana"];
+let rotation = 1;
+
+rotateRight(arr, rotation);
