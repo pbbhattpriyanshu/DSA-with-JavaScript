@@ -184,21 +184,35 @@
 // rotateLeft(arr, rotation);
 
 //Right Rotate Array by One Place
-function rotateRight(arr, rotation) {
-  rotation = rotation % arr.length; // optional, handles large values
+// function rotateRight(arr, rotation) {
+//   rotation = rotation % arr.length; // optional, handles large values
 
-  for (let j = 1; j <= rotation; j++) {
-    let copy =  arr[arr.length - 1];
-    for (let i = arr.length-1; i > 0 ; i--) {
-      arr[i] = arr[i-1];
-    }                         
-     arr[0] = copy;
-  }
+//   for (let j = 1; j <= rotation; j++) {
+//     let copy =  arr[arr.length - 1];
+//     for (let i = arr.length-1; i > 0 ; i--) {
+//       arr[i] = arr[i-1];
+//     }                         
+//      arr[0] = copy;
+//   }
 
-  console.log(arr);
-}
+//   console.log(arr);
+// }
 
-let arr = ["Abhi", "Bula", "Chamka", "Dora", "Egle", "Fana"];
-let rotation = 1;
+// let arr = ["Abhi", "Bula", "Chamka", "Dora", "Egle", "Fana"];
+// let rotation = 1;
 
-rotateRight(arr, rotation);
+// rotateRight(arr, rotation);
+
+
+//Sum of all elements
+// function sumofArray(arr) {
+//   let sum = 0
+//   for (let i = 0; i < arr.length; i++) {
+//     sum = sum + arr[i]
+//   }
+//   console.log(`Sum of array ${arr} is ${sum}`);
+// }
+
+// let arr = [1,2,3,4,5]//15
+
+// sumofArray(arr)
