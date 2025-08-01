@@ -172,6 +172,19 @@
 
 // rotateRight(arr, rotation);
 
+//new approach to rotate left -  array
+let newArr = [1,2,3,4,5]
+let temp = new Array(newArr.length)
+let times = 3;
+times = times % newArr.length
+
+for(let i=0; i<newArr.length; i++){
+    temp[i] = newArr[(i+times) % newArr.length]
+}
+
+console.log(temp);
+
+
 
 //Sum of all elements
 // function sumofArray(arr) {
@@ -187,34 +200,34 @@
 // sumofArray(arr)
 
 //Check if array is palindrome
-function checkPalindrome(arr) {
-  let temp = new Array(arr.length);
-  let j = 0;
+// function checkPalindrome(arr) {
+//   let temp = new Array(arr.length);
+//   let j = 0;
 
-  // Reverse the array manually into temp
-  for (let i = arr.length - 1; i >= 0; i--) {
-    temp[j] = arr[i];
-    j++;
-  }
+//   // Reverse the array manually into temp
+//   for (let i = arr.length - 1; i >= 0; i--) {
+//     temp[j] = arr[i];
+//     j++;
+//   }
 
-  // Check each element one by one
-  let isPalindrome = true;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== temp[i]) {
-      isPalindrome = false;
-      break;
-    }
-  }
+//   // Check each element one by one
+//   let isPalindrome = true;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] !== temp[i]) {
+//       isPalindrome = false;
+//       break;
+//     }
+//   }
 
-  // Output result
-  if (isPalindrome) {
-    console.log(`${arr} is a palindrome!!`);
-  } else {
-    console.log(`${arr} is not a palindrome!!`);
-  }
-  console.log("Reversed array:", temp);
-}
+//   // Output result
+//   if (isPalindrome) {
+//     console.log(`${arr} is a palindrome!!`);
+//   } else {
+//     console.log(`${arr} is not a palindrome!!`);
+//   }
+//   console.log("Reversed array:", temp);
+// }
 
 
-let arr = [1,2,3]
-checkPalindrome(arr)
+// let arr = [1,2,3]
+// checkPalindrome(arr)
